@@ -13,3 +13,8 @@ class User:
             telephone number : New user telephone number.
             email : New user email address.
         '''
+
+        self.first_name = first_name  
+        self.last_name = last_name
+        self.telephone_number =telephone_number 
+        self.email_email = email
