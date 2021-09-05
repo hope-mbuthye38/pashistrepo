@@ -4,11 +4,12 @@ class User:
     """
     pass
     
-    def__init__(self,first_name,last_name,telephone_number,email):
-    '''
-     _ init _ method that helps us define properties for our objects
-     first _name : New user first name.
-     last_name : New user last name.
-     telephone number : New user telephone number.
-     email : New user email address.
-    '''
+    def __init__(self,first_name,last_name,telephone_number,email):
+        '''
+        __init__ method that helps us define properties for our objects
+        Args:
+            first _name : New user first name.
+            last_name : New user last name.
+            telephone number : New user telephone number.
+            email : New user email address.
+        '''
