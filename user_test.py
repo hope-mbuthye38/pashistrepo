@@ -46,9 +46,11 @@ if __name__ ==  '__main__':
             objects to our user_list
             '''
             self.new_user.save_user()
-            test_contact = User("Test","Daphnee","mugra","test@user.com") # new contact
+            test_contact = User("Test","Daphnee","mugra","Daphnee21@gmail.com") # new user
             test_contact.save_user()
             self.assertEqual(len(User.user_list),2)
 
 if __name__ == '__main__':
     unittest.main()
+
+    
