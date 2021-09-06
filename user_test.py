@@ -60,3 +60,16 @@ def delete_user(self):
         '''
 
         User.user_list.remove(self)
+
+def test_find_user_by_user(self):
+        '''
+        test to check if we can find a user by phone number and display information
+        '''
+
+        self.new_user.save_user()
+        test_user= User("Test","Daphnee","mugra","Daphnee21@gmail.com") # new user
+        test_user.save_user()
+
+        found_user= User.find_by_username("Daphnee")
+
+        self.assertEqual(found_user.email,test_user.email)  
