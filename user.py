@@ -3,8 +3,11 @@ class User:
     Class that generates new instances for users
     """
     pass
-    
-    def __init__(self,first_name,last_name,telephone_number,email):
+
+    user_list = []
+     
+
+    def __init__(self,first_name,last_name ,username,password,email):
         '''
         __init__ method that helps us define properties for our objects
         Args:
@@ -16,7 +19,16 @@ class User:
 
         self.first_name = first_name  
         self.last_name = last_name
-        self.telephone_number = telephone_number 
-        self.email_email = email
+        self.username = username
+        self.password = password 
+        self.email = email
 
-        
+         # Empty contact list
+ 
+    def save_user(self):
+
+        '''
+        save_user method saves user objects into user_list
+        '''
+
+        User.user_list.append(self)
