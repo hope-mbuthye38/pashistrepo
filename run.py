@@ -70,7 +70,7 @@ def search_credentials():
 def main():
     print("Jambo Welcome to your user list.What is your name?")
     user_username = input()
-    print(f"Hello {user_username}. What would you like to do?")
+    print(f"Jambo {user_username}. What would you like to do?")
     print('\n')
     while True:
         print("use the short codes to print user: \n cru - create a new user \n du - display user \n fu - find a user \n dlu - delete user \n ex - exit the user list" )
@@ -86,7 +86,7 @@ def main():
             Username = input()
             print("Email  ......")
             Email = input()
-            print(" password......")
+            print("password......")
             Password =  input()
             
 
