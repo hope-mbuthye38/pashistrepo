@@ -20,8 +20,8 @@ run.py
 * code . 
 # running application
 To run the application 
-$ chmod+xrun.py
-$ name of folder
+* $ chmod+xrun.py
+* $ ./run.py
 
 # Testing the application
 $ python3.8 user_test.py
