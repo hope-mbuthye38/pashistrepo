@@ -1,5 +1,3 @@
-
-
 from user import User
 from credentials import Credentials
 def create_user(firstname,lastname,nwname,email,password):
@@ -7,8 +5,8 @@ def create_user(firstname,lastname,nwname,email,password):
     Function to create a new user
     '''
     new_user = User(firstname,lastname,nwname,email,password)
-
     return new_user
+
 def save_user(user):
     '''
     Function to save user
