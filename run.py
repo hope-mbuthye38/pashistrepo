@@ -77,7 +77,14 @@ def search_credentials():
     Function that search credentials by username and return the credentials
     '''
     return Credentials.search_credentials()
-    
+
+def produce_Password():
+    '''
+    produces a random password for the user
+    '''
+    madeup_password = Credentials.producePassword()
+    return madeup_password
+
 def main():
     print("Jambo Welcome to your user list.What is your name?")
     user_username = input()
@@ -97,10 +104,20 @@ def main():
             Username = input()
             print("Email  ......")
             Email = input()
-            print("password......")
-            Password =  input()
+            while True:
+                print(" pst - To type password:\n psd - To be produced for a password")
+                password_Choose = input().lower().strip()
+                if password_Choose == 'pst':
+                    Password = input("Type Password\n")
+                    break
+                elif password_Choose == 'psd':
+                    Password = produce_Password()
+                    break
+                else:
+                    print("Invalid details")
+            # print("password......")
+            # Password =  input()
             
-
             save_user(create_user(Firstname,Lastname,Username,Email,Password))
         
             print('\n')
@@ -110,8 +127,8 @@ def main():
             if display_users():
                 print("Here is a list of all your users")
                 print('\n')
-            for user in display_users():
-                    print(f"{user.firstname} {user.lastname} {user.username} {user.email} ")
+                for user in display_users():
+                    print(f"{user.first_name} {user.last_name} {user.username} {user.email} {user.password}")
             else:
                 print('\n')
                 print("You dont seem to have any account saved yet")
