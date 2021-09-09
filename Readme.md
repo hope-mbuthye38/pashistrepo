@@ -8,7 +8,7 @@ These are behaviours/features that user implements such include creating account
  Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 Display codes in terminal first by creation of a python folder $PASTRACE.py within folder files of user_test.py,user.py,run.py,credentials.py # credentials.......
-def create_credentials Account,username,email,password function ef create_user(firstname,lastname,nwname,email,password):Use these short codes to print credentials: \n  cc - create a new credentials \n dc - display credentials \n fc - find credentials \n ec - exit credentials list")print("Jambo Welcome to your user list.What is your name"("use the short codes to print user: \n cru - create a new user \n du - display user \n fu - find a user \n dlu - delete user \n ex - exit the user list" )  short_code =  if short_code'cru':
+def create_credentials Account,username,email,password function ef create_user(firstname,lastname,nwname,email,password):Use these short codes to print credentials: \n  cc - create a new credentials \n dc - display credentials \n fc - find credentials \n ec - exit credentials list")print("Jambo Welcome to your user list.What is your name"("use the short codes to print user: \n cru - create a new user \n du - display user \n fu - find a user \n dlu - delete user \n ex - exit the user list" )  short_code =  if short_code'cru':print(" pst - To type password:\n psd - To be produced for a password")
 # prequisities
 python3.8
 pycache
