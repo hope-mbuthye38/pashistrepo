@@ -1,5 +1,7 @@
+#!/usr/bin/env python3.8
 from user import User
 from credentials import Credentials
+
 def create_user(firstname,lastname,nwname,email,password):
     '''
     Function to create a new user
@@ -12,26 +14,31 @@ def save_user(user):
     Function to save user
     '''
     user.save_user()
+
 def del_user(user):
     '''
     Function to delete a user
     '''
     user.delete_user()
+
 def find_user(username):
     '''
     Function that finds a user by username and returns the user
     '''
     return User.find_by_username(username)
+
 def display_users():
     '''
     Function that returns all the saved users
     '''
     return User.display_users()
+
 def search_user():
     '''
     Function that searches for credentils by username and returns the credentials
     '''
     return User.search_user()
+
 # credentials.......
 def create_credentials( Account,username,email,password):
     '''
@@ -39,32 +46,38 @@ def create_credentials( Account,username,email,password):
     '''
     new_credentials = Credentials(Account,username,email,password)
     return new_credentials
+
 def save_credential(credentials):
     '''
     Function to save credentials
     '''
     credentials.save_credentials()
     # return credentials
+
 def del_credentials(credentials):
     '''
     Function to delete  credentials
     '''
     credentials.delete_credentials()
+
 def find_credentials(username):
     '''
     Function that finds a credentials by username and returns the credentials
     '''
     return Credentials.find_by_username(username)
+
 def display_credentials():
     '''
     Function that returns all the saved credentials
     '''
     return Credentials.display_credentials()
+
 def search_credentials():
     '''
     Function that search credentials by username and return the credentials
     '''
     return Credentials.search_credentials()
+    
 def main():
     print("Jambo Welcome to your user list.What is your name?")
     user_username = input()
