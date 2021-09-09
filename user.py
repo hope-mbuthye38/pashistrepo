@@ -1,3 +1,5 @@
+import string
+import random
 class User:
     """
     Class that generates new instances for users
@@ -77,3 +79,10 @@ class User:
          '''
 
         return cls.user_list
+
+    def producePassword(stringLength=8):
+        '''
+        method that generates a random password of string of digits,letters and special characters
+        '''
+        password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "!@#><*&^"
+        return ''.join(random.choice(password) for i in range(stringLength))
