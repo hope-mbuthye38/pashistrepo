@@ -20,7 +20,7 @@ run.py
 * code . 
 # running application
 To run the application 
-* $ chmod+xrun.py
+* $ chmod +x run.py
 * $ ./run.py
 
 # Testing the application
