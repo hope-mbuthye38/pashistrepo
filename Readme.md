@@ -14,7 +14,10 @@ python3.8
 pycache
 run.py
 # cloning
-$ git clone https://github.com/hope-mbuthye38/pashistrepo         $ cd PASTRACE.py
+* Open terminal {CTRL+ALT+T}
+* $ git clone ```https://github.com/hope-mbuthye38/pashistrepo```        
+* $ cd pashistrepo
+* code . 
 # running application
 To run the application 
 $ chmod+xrun.py
